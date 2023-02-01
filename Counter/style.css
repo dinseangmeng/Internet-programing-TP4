@@ -52,6 +52,11 @@ body #container .btn button {
   font-weight: bold;
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 600px) {
+  body #container .btn button {
+    font-size: 0.9rem;
+  }
+}
 body #container .btn button.Increase {
   background-color: #222222;
   color: white;
