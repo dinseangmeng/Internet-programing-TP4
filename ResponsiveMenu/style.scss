@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "_prethumnail.scss";
 *{
     margin: 0;
     padding: 0;
@@ -63,6 +64,7 @@ body{
                     display: none;
                 }
                 button{
+
                     padding: .2rem .7rem;
                     border: none;
                     background-color: #ffffff;
@@ -80,6 +82,11 @@ body{
                         bottom: var(--border-size);
                         z-index: -1;
                         border-radius: calc(var(--border-raduis) - var(--border-size));
+                    }
+                    &:hover{
+                        background-color: var(--main-color);
+                        cursor: pointer;
+                        // opacity: .4;
                     }
                 }
             }
