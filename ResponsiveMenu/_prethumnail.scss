@@ -1,10 +1,14 @@
 .pre_thumnail{
-        width: 30rem;
+        width: 100%;
         aspect-ratio: 1/.5;      
         border-radius: .7rem;
         overflow: hidden;  
         display: flex;
         gap: 1.6rem;
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+            aspect-ratio: 1/1;   
+        }
         &>div{
             width: 100%;
         }
@@ -30,9 +34,11 @@
             }
             .description{
                 height: 60%;
-                border-radius: .7rem;
+                // border-radius: .7rem;
                 display: flex;
                 flex-direction: column;
+                border-top: 3px dashed hsl(200, 20%, 70%);
+                padding: .8rem 0;
                 gap: .7rem;
                 div{
                     width: 100%;

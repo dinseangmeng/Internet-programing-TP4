@@ -49,6 +49,9 @@ body{
                 transition: 250ms;
                 font-weight: bold;
                 font-size: 1.2rem;
+                @media only screen and (max-width: 600px){
+                    font-size: .9rem;
+                }
                 &.Increase{
                     background-color: #222222;
                     color: white;
