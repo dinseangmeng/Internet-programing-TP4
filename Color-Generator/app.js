@@ -5,7 +5,7 @@ class ColorRand{
         this.lastestColor=this.record!=[]?this.record[this.record.length-1]:" ";
         // console.log(this.record)
         if(this.lastestColor!=" " &&  this.lastestColor!=null && this.lastestColor!=undefined){
-            this.update()
+            this.update();
         }
     }
     generate(){
@@ -36,7 +36,10 @@ class ColorRand{
         document.querySelector(".colorpalet").style.cssText=`--scroll-bar-color:${this.lastestColor};`;
         document.querySelector("#container").style.cssText=`--bg-color:${this.lastestColor};`
         document.querySelector(".colorCode").innerText=this.lastestColor;
-        this.record=[...this.record,this.lastestColor];
+        if(this.lastestColor!=this.record[this.record.length-1]){
+            this.record=[...this.record,this.lastestColor];
+
+        }
         let tmpHtml="";
         this.record.forEach(item => {
             tmpHtml+= `<div class="color" style="--color-box-bg:${item};">
