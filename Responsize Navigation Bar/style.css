@@ -102,7 +102,7 @@ body .navigation .menu_icon {
   }
 }
 body .navigation .menu_icon svg {
-  fill: #49a6e9;
+  color: #49a6e9;
   --size:2rem;
   width: var(--size);
   height: var(--size);
@@ -111,6 +111,7 @@ body .navigation .menu_icon svg {
 }
 body .navigation .menu_icon svg.open {
   transform: rotate(90deg);
+  color: black;
 }
 body .menu_drop {
   display: none;

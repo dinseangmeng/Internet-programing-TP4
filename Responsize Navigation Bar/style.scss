@@ -101,15 +101,18 @@ body{
             }
             justify-content: flex-end;
             svg{
-                fill: #49a6e9;
+                color: #49a6e9;
                 --size:2rem;
                 // stroke-width: 1rem;
                 width: var(--size);
                 height: var(--size);
                 cursor: pointer;
                 transition: 300ms;
-            &.open{
-                transform: rotate(90deg);
+                &.open{
+                    transform: rotate(90deg);
+                    color: black;
+                
+                
             }
             }
         }
